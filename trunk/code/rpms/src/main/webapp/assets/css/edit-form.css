@@ -1,0 +1,10 @@
+input[disabled].easyui-validatebox, input[readonly].easyui-validatebox {
+    cursor: not-allowed;
+    background-color: #eeeeee;
+    padding: 2px;
+    border-width: 1px;
+}
+
+td > input[type="text"] {
+    height: 22px;
+}

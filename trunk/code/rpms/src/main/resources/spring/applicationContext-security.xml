@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security" xmlns:b="http://www.springframework.org/schema/beans"
+         xmlns:security="http://www.springframework.org/schema/security"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <http auto-config="true">
+        <intercept-url pattern="/asset-libs/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/assets/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/portal/login.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/**" access="ROLE_USER"/>
+
+        <form-login login-page="/portal/login.do" default-target-url="/portal/main.do"
+                    always-use-default-target="true" authentication-failure-url="/portal/login.do?error=true"/>
+
+        <session-management>
+            <concurrency-control expired-url="/portal/login.do" error-if-maximum-exceeded="false" max-sessions="1"/>
+        </session-management>
+    </http>
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="userDetailsSecurityService">
+            <password-encoder hash="md5" />
+        </authentication-provider>
+    </authentication-manager>
+</b:beans>

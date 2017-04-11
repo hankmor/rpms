@@ -1,0 +1,104 @@
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+    background-color: #eef0ef;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.login {
+    width: 360px;
+    height: 260px;
+    margin: 106px auto 0 auto;
+    padding-left: 340px;
+    padding-top: 150px;
+    background: url(../imgs/LoginBg.png) no-repeat;
+}
+
+.login_model {
+    width: 310px;
+    height: 32px;
+    font-size: 12px;
+    color: #868686;
+    margin-top: 10px;
+}
+
+.login_model .model_left {
+    width: 70px;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+}
+
+.login_model .model_right {
+    width: 240px;
+    height: 26px;
+    float: left;
+    padding-top: 6px;
+}
+
+.login_model .model_message {
+    margin-top: 5px;
+}
+
+.login_submit {
+    width: 270px;
+    height: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.inputlogin {
+    width: 194px;
+    height: 21px;
+    border: #ccc solid 1px;
+    background: url(../imgs/InputBg_01.gif) repeat-x;
+    font-size: 12px;
+    color: #606060;
+}
+
+.buttonlogin {
+    width: 75px;
+    height: 22px;
+    background: url(../imgs/ButtonLogin.gif) no-repeat;
+    color: #fff;
+    font-size: 12px;
+    border: 0;
+    cursor: pointer;
+}
+
+.message-error {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

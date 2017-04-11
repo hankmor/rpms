@@ -1,0 +1,62 @@
+#logo-img {
+    background: url('../imgs/title-logo.png') no-repeat;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 600px;
+}
+
+#window-modal-mask {
+    display: block;
+    z-index: 99006;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    font-size: 1px;
+    *zoom: 1 :;
+    overflow: hidden;
+    background: #cccccc;
+}
+
+.layout-table {
+    width: 100%;
+}
+
+.layout-table tr > td {
+    padding: 5px;
+}
+
+table {
+    font-size: small;
+}
+
+.OrgBox {
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    clear: left;
+    float: left;
+    text-align: center;
+    position: absolute;
+    /*background-image: url(../studbook/org.jpg);*/
+    background-color: #EEFFFF;
+    width: auto;
+    height: auto;
+    border: solid 1px darkgreen;
+    border-radius: 10px;
+}
+
+.OrgBox img {
+    width: auto;
+    height: auto;
+}
+
+.OrgBox div {
+    color: #FFA500;
+    font-weight: 800;
+}
