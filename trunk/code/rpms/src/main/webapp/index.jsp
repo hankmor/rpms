@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2></h2>
+<%response.sendRedirect(request.getContextPath() + "/portal/login.do");%>
 </body>
 </html>
